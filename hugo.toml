@@ -5,8 +5,12 @@ theme = 'coming-soon'
 
 [params]
     title = "Break2Me Blog" 
-    description = "A simple countdown"
+    description = "The Black Winter"
     favicon = ""
     message = "COMING SOON!" 
     release = "Jun 30, 2024" 
     background = "" 
+
+[params.twitter]
+	enable = true  # enabled by default 
+	username = "fabiomendesilva" # enter your Twitter username here
