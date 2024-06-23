@@ -4,7 +4,7 @@ title = "Break2Me Blog"
 theme = 'coming-soon'
 
 [params]
-    title = "Coming Soon" 
+    title = "Break2Me Blog" 
     description = "A simple countdown"
     favicon = ""
     message = "COMING SOON!" 
