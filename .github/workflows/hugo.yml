@@ -34,6 +34,11 @@ jobs:
     env:
       HUGO_VERSION: 0.127.0
     steps:
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v3.0.0
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
@@ -43,7 +48,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true
           fetch-depth: 0
       - name: Setup Pages
         id: pages
@@ -65,7 +70,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-
+               
   # Deployment job
   deploy:
     environment:
