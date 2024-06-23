@@ -14,3 +14,8 @@ theme = 'coming-soon'
 [params.twitter]
 	enable = true  # enabled by default 
 	username = "fabiomendesilva" # enter your Twitter username here
+
+socialIcons = [
+{name = "email", url = "example@example.com"},      
+{name = "twitter", url = "https://twitter.com/"},
+]
